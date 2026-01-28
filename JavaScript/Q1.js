@@ -1,8 +1,13 @@
 // Constant
 /*  */
 const AccID=10;
+console.log("Initial Constant Value of AccID as const:",AccID)
 {
-   // AccID=20;
+   try{AccID=20;}
+    catch(err){
+        console.log("Changing Constant (AccID) Value  will give error as the const value onces declared can not be changed")
+        console.log("Error :",err.message)
+    }
    // this will give error as the const value onces declared can not be changed 
 }
 

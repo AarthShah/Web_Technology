@@ -1,9 +1,15 @@
 // Constant
 /*  */
 const AccID=10;
+document.writeln("\n Initial Constant Value of AccID as const:",AccID)
 {
-   // AccID=20;
-   // this will give error as the const value onces declared can not be changed 
+   try {
+      AccID=20;}
+    catch(err){
+        document.writeln("\n Changing Constant (AccID) Value  will give error as the const value onces declared can not be changed")
+        document.writeln("\n Error :",err.message)
+    }
+   //this will give error as the const value onces declared can not be changed 
 }
 
 
@@ -12,10 +18,10 @@ const AccID=10;
 var A=20;
 { 
     A=45
-    document.writeln("Value of Var inside Scope")
+    document.writeln("\n Value of Var inside Scope")
     document.writeln(A)
 }
-    document.writeln("Value of Var outside  Scope")
+    document.writeln("\n Value of Var outside  Scope")
     document.writeln(A)
 
 // let
@@ -23,43 +29,43 @@ var A=20;
 let B=30
 {
     let B=50
-    document.writeln("Value of let inside  Scope ")
+    document.writeln("\n Value of let inside  Scope ")
     document.writeln(B)
 }
 
-document.writeln("Value of let Outside the Scope")
+document.writeln("\n Value of let Outside the Scope")
 document.writeln(B)
 
 // Variables in JavaScript
 
 // string
 let AccName="Aarth"
-document.writeln(AccName)
+document.writeln("\n"+AccName)
 document.writeln("type =",typeof(AccName))
 
 //number
 let AccId=101
-document.writeln(AccId)
+document.writeln("\n"+AccId)
 document.writeln("type =",typeof(AccId))
 
 //Boolen
 let Maried_status=false
-document.writeln(Maried_status)
+document.writeln("\n"+Maried_status)
 document.writeln("type =",typeof(Maried_status))
 
 // Big Number
 let AccNo=904769876453789
-document.writeln(AccNo)
+document.writeln("\n"+AccNo)
 document.writeln("type =",typeof(AccNo))
 
 // undefined
 let Balance;
-document.writeln(Balance)
+document.writeln("\n"+Balance)
 document.writeln("type =",typeof(Balance))
 
 // Null
 let Interst=null
-document.writeln(Interst)
+document.writeln("\n"+Interst)
 document.writeln("type =",typeof(Interst))
 
 //symbol
@@ -79,20 +85,20 @@ let Marks_Maths=67
 let Marks_English=79
 let Marks_Hindi=45
 
-document.writeln("Student Info ...")
-document.writeln("Student Name :",Student_Name)
-document.writeln("Student Class :",Student_Class)
-document.writeln("Maths Marks",Marks_Maths)
-document.writeln("Marks of English",Marks_English)
-document.writeln("Marks of Hindi :",Marks_Hindi)
+document.writeln("\nStudent Info ...")
+document.writeln("\nStudent Name :"+Student_Name)
+document.writeln("\nStudent Class :"+Student_Class)
+document.writeln("\nMaths Marks :"+Marks_Maths)
+document.writeln("\nMarks of English :"+Marks_English)
+document.writeln("\nMarks of Hindi :"+Marks_Hindi)
 
 // Activity 2 
 
 if (Marks_Maths>=50 & Marks_English>=50 & Marks_Hindi>=50){
-    document.writeln("Student is Passed ")
+    document.writeln("\n Student is Passed ")
 }
 else{
-    document.writeln("Student Failed")
+    document.writeln("\n Student Failed")
 }
 
 // Activity 3
@@ -100,16 +106,16 @@ else{
 let No1=5
 
 if (No1%2==0){
-    document.writeln(" The No is Even ")
+    document.writeln("\n The No is Even ")
 }
 else{
-    document.writeln("The No. is Odd")
+    document.writeln("\n The No. is Odd")
 }
 
 // Activity 4
 
 for(i =0;i<10;i++){
-    document.writeln("Number : "+i)
+    document.writeln("\nNumber : "+i)
 
 }
 
@@ -119,5 +125,5 @@ let a=10;
 b=a;
 a = 20;
 
-document.writeln("Value of b :"+b)
-document.writeln("Value of a :",a)
+document.writeln("\nValue of b :"+b)
+document.writeln("\nValue of a :"+a)
