@@ -31,4 +31,7 @@ console.log(Math.min(1,2,3,4,5,6))
 
 console.log(Math.max(10,20,30,90))
 
+//  let arr1 = [10,20,30,40];
+//  console.log(Math.max(...arr1)) // spread operator
+
 // How to work with Math.random with eg

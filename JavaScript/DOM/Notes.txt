@@ -1,10 +1,22 @@
 Q1) What is DOM?
 
-    Dome is a brige Btw javascript and HTML
+    Dom=>Document Object Model
+
+    Dom is a brige Btw javascript and HTML
 
     it is a promgraming interface for HTML and XML documents.
     When browser loads an html page it converst the html into object that object sturture is called DOM (Document Object Model) 
     DOM allows programing languages like javascript to manipulate the html page structure style and content.
+
+Q1.a) DOM manipulation:
+    DOM manipulation refers to the process of using JavaScript to dynamically change the content, structure, and style 
+    of a web page by accessing and modifying the Document Object Model (DOM).
+
+    Examples of DOM manipulation include:
+        - Show error message if the user submits a form without filling out required fields.
+        - Change text color of a paragraph when a button is clicked.
+        - Clear input fields after form submission.
+        - Add new items to a list when a user clicks a button.
 
 Q2) getElementById() - it is a method in DOM that is used to access an HTML element by its unique ID attribute.
 Example:
@@ -29,3 +41,13 @@ Q3)querySelector() - it is a method in DOM that is used to access the first HTML
         elements.forEach(function(element) {
             element.style.border = "1px solid black"; // Add a black border to each element
         });    
+
+Q4) What is form validation :
+    Form validation is the process of ensuring that the data entered into a web form meets certain criteria before it is submitted 
+    to a server or processed further. This helps to ensure that the data is accurate, complete, and in the correct format.
+
+How to get user input in DOM:
+    To get user input in DOM, you can use various methods to access the value of form elements such as input fields, textareas, 
+    and select dropdowns. The most common way to get user input is by using the .value property of these elements.
+    
+   -- Note :  To get user input in DOM use .value property.
