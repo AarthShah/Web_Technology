@@ -47,77 +47,77 @@
         <li>
             <img id="photoshop"
                 src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                 alt="Photoshop Logo" onclick="alert('removeing image' )">  
-                 <!-- html should contain struture and java must contain logic here this is a wrong format this is a bad way 
-                   use scrpit tag -->
+                 alt="Photoshop Logo">  
+                 <button id="PhotoButton">Remove Image</button>     
         </li>
 
         <li>
             <img id="japan"
                 src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
                 alt="Mount Fuji">
+                <button id="JapanButton">Remove Image</button>
         </li>
 
         <li>
             <img id="Nature"
                 src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
                 alt="Nature Image">
+                <button id="NatureButton">Remove Image</button>
         </li>
 
         <li>
             <img id="photoman"
                 src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
                 alt="Photographer">
+                <button id="PhotoManButton">Remove Image</button>
         </li>
 
         <li>
             <img id="tiger"
                 src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
                 alt="Tiger">
+                <button id="TigerButton">Remove Image</button>
         </li>
 
         <li>
             <a href="https://google.com" id="google">Visit Google</a>
+            <button id="googleButton">Remove Link</button>
+
         </li>
     </ul>
   </body>
   <script>
     
-    document.getElementById("japan").onclick=function()
-    {
-        alert('removing the image ')
+    const photoshop = document.getElementById("PhotoButton")
+    const japan = document.getElementById("JapanButton")
+    const nature = document.getElementById("NatureButton")
+    const photoman = document.getElementById("PhotoManButton")
+    const tiger = document.getElementById("TigerButton")
+    const google = document.getElementById("googleButton")
 
-    }
-    // select elemnt to assigned when click fuction runs 
-    // only one event can be assigned to an element using this method cant not handale multiple lisners 
+    photoshop.addEventListener("click",function(){
 
-    document.getElementById("Nature").addEventListener("click",function(e){
-        alert("removing the is image ^ ^")
-        console.log(e);
-         },false
-    )
+        document.getElementById("photoshop").style.display="none";
+    })
+   
+    japan.addEventListener("click",function(){
+        document.getElementById("japan").style.display="none";
+    })
 
-  // Event propagation : bubbling and capturing
-  
-  document.getElementById("images").addEventListener("click",function(){
-    alert("hey this is a image")
+    nature.addEventListener("click",function(){
+        document.getElementById("Nature").style.display="none";
+    })
 
-    console.log("clicking inside the ul")
-  },false
-)
-  document.getElementById("photoshop").addEventListener("click",function(){
-    alert("hey this is a image")
+    photoman.addEventListener("click",function(){
+        document.getElementById("photoman").style.display="none";
+    })
 
-    console.log("clicking inside photoshop")
-  },false
-  )
-// event goes to inner element to the parent element  bubbling is chid to parent and capturing is parent to child
+    tiger.addEventListener("click",function(){
+        document.getElementById("tiger").style.display="none";
+    })
 
-document.getElementById("google").addEventListener("click",function(e){
-
-    console.log("clicking google link")
-    e.preventDefault() // to prevent default behaviour of the link to open google page(this stops the link from working) 
-}
-)
+    google.addEventListener("click",function(){
+        document.getElementById("google").style.display="none";
+    })
   </script>
   </html>

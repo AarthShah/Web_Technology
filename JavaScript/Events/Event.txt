@@ -1,0 +1,24 @@
+Event is an action which occurs in the browser 
+ eg 
+1. click a button
+2. moveing mouse
+3 press a key on the keyboard
+4. submit a form
+5. load a webpage
+
+Event handling is a way to respond to user interactions with the webpage.
+In JavaScript, we can use event listeners to listen for specific events and execute a function when the event occurs.
+
+javascript can detect this event and responce to them 
+
+types of events
+1. Mouse events: click, dblclick, mouseover, mouseout, mousemove
+2. Keyboard events: keydown, keyup, keypress
+3. browser events: load, unload, resize, scroll
+
+hw jquery , type typestape deufalt prevented
+ renttarget,clientx,clienty,offsetx,offsety,screenx,screeny,altkey,ctrlkey,shiftkey,metakey
+
+ addventlistener is a javaScript method used to attach event handlers to a html element to run  a fuction when a specfic fuction or event occurs
+
+activity : remove the image when we click on it 
