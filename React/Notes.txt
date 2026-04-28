@@ -1,0 +1,76 @@
+React : React  is a javascript library build by meta to build fast and interactive UI 
+        react is a single page application library which means it only update the part of the page which is changed and not the whole page (page does not reload only page contain changes )
+        eg : facebook , instagram , twitter etc are build using react
+
+    Why do we need react:
+    javascript (b4 react )
+      full page reload 
+      complex DOm manipulation
+      hard to maintain code
+      hard to reuse code
+
+    react (after react)
+      update only part of the page which is changed
+      use reusable components
+      maintainable code
+
+    What is virtual DOM:
+          it creats a  copy of the real DOM  is is called virtual DOM 
+          when we make any changes it only updates the parts in the virtual DOM and then it compares the virtual DOM with the real DOM and updates only the parts which are changed in the real DOM this process is called reconciliation
+
+    
+    how to create react app:
+     2 methods to create react app
+       npx create-react-app <app-name>
+       npm create vite@lastest <app-name>
+
+Activity:
+   differnce btw angular and react
+   market share of react and angular
+
+   why react is created 
+
+vite : fast build tool 
+npm install :installs deoendances
+npm run dev  :starts the development server
+
+what is jsx :  it is javascript + HTML it allows us to write HTML code in javascript file
+              eg : const element = <h1>Hello, React!</h1>;
+
+              Rules:
+                Must return a single parent
+                use scope brakets({ }) for javascript expression
+
+
+Compents : it is the heart of React 
+   
+     1) Functional compoents : it is a javascript function which returns a react element 
+        eg : 
+            function Student() {
+              return <h1>this is a Functional Component</h1>;
+            }
+
+            use component:
+                          Function App(){
+                            return<>
+                              <Student/>
+                            </>
+
+                          }
+
+            Properties (props) :  data passed from parent (component) to child (component)
+                                
+                Function App(){
+                            return<studnet name="XYZ" age={20} />
+
+                          }
+                Function Student(props) {
+                    return <h2>My name is {props.name} and I am {props.age} years old</h2>;
+                }
+
+      Activity:
+        What is compents and its types
+        where we use compents in react with 2 eg
+        What is props and wht we use props in react and its types with 2 eg
+         
+    

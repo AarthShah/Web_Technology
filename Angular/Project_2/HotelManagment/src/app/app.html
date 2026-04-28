@@ -1,0 +1,67 @@
+<div class="container">
+  <h1>{{ title() }}</h1>
+
+  <!-- Add/Edit Form -->
+  <div class="form-section">
+    <h2>{{ editingId() ? 'Edit Hotel' : 'Add New Hotel' }}</h2>
+    <form (ngSubmit)="addHotel()">
+      <div>
+        <label>Hotel Name:</label>
+        <input type="text" [(ngModel)]="hotelName" name="name" placeholder="Enter hotel name" />
+      </div>
+      <div>
+        <label>Location:</label>
+        <input type="text" [(ngModel)]="hotelLocation" name="location" placeholder="Enter location" />
+      </div>
+      <div>
+        <label>Number of Rooms:</label>
+        <input type="number" [(ngModel)]="hotelRooms" name="rooms" placeholder="Enter number of rooms" />
+      </div>
+      <div>
+        <label>Price per Night:</label>
+        <input type="number" [(ngModel)]="hotelPrice" name="price" placeholder="Enter price" />
+      </div>
+      <div class="button-group">
+        <button type="submit">{{ editingId() ? 'Update' : 'Add' }}</button>
+        <button type="button" (click)="clearForm()" *ngIf="editingId()">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Search Section -->
+  <div class="search-section">
+    <h2>Search Hotels</h2>
+    <input type="text" [(ngModel)]="searchQuery" (input)="search()" placeholder="Search by name or location" class="search-input" />
+  </div>
+
+  <!-- Hotels Table -->
+  <div class="table-section">
+    <h2>All Hotels</h2>
+    <p *ngIf="filteredHotels().length === 0">No hotels found.</p>
+    <table *ngIf="filteredHotels().length > 0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Rooms</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hotel of filteredHotels()">
+          <td>{{ hotel.id }}</td>
+          <td>{{ hotel.name }}</td>
+          <td>{{ hotel.location }}</td>
+          <td>{{ hotel.rooms }}</td>
+          <td>${{ hotel.price }}</td>
+          <td>
+            <button (click)="editHotel(hotel)" class="edit-btn">Edit</button>
+            <button (click)="deleteHotel(hotel.id)" class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

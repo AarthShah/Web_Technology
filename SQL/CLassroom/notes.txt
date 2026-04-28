@@ -1,0 +1,21 @@
+SQL : it is used for communicating with database eg MYsql postSQL
+     useage : to manage data in relational database management system (RDBMS) (Adding, updating, deleting, retrieving data)
+
+Activity:
+   Create Table : Create table Students(id int, name varchar(20), age int);
+   Insert Data : Insert into Students values(1,'Aarth', 20);
+   Select Data : Select * from Students;
+   Update Data : Update Students set age =20 where id=1;
+
+ORM: Object Relational Mapping : INsted of writing Sql queries we can use programming language to interact with database
+     useage : to interact with database using object-oriented programming languages (like Python, Java, etc.) without writing raw SQL queries
+
+WebSocket: it allows us realtime communications HTTP -> request-response model 
+                                                websocket -> Continuous communication channel over a single TCP connection
+
+        useage : to enable real-time, bidirectional communication between a client (like a web browser) and a server (like a web server) without the need for constant HTTP requests. It is commonly used in applications like chat apps, live notifications, and online gaming.
+        eg : live Stock Market Updates, Online Gaming, Collaborative Editing, Real-time Notifications, Chat Applications
+        cmd : npm install ws
+
+        Activity:
+           1.DeepStudy of websocket with code examples

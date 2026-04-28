@@ -1,0 +1,51 @@
+packages list , dependances = part of build ,dev dependence = local build
+
+Angular.json: 
+Stye.css=Goble css
+.gitignore : to exeute from version control
+type script
+index.html =  main file load angular
+ts config=type Script configuration file 
+
+app.config.ts= app configuration 
+main.ts=point of applition
+
+component = part of UI or block of ui
+when we create a compent : ng g(genrate) c(component) <component name>
+
+imp
+Data Binding : connect ui to code to ( bind data from component to html)
+types of data binding:
+1. one way data binding : from component to html
+  1.a) interpolation : {{}} Show data from ts in html {{Value}} ( to bind data from component to html)
+  1.b) property binding : [] ( to bind data from component to html)
+  1.c) event binding : () ( to bind data from html to component)
+2. two way data binding : from component to html and html to component
+
+drective : to change the behaviour of html element
+1. structural directive : to change the structure of html element ( *ngIf, *ngFor)
+2. attribute directive : to change the attribute of html element ( ngClass, ngStyle)
+
+============================= Activity =============================
+directives activity:
+when div1 is true, show div 1
+<div *ngIf="div1">Div 1</div>
+when div 2 is not true, show warning
+<div *ngIf="!div2">Div 2 is not true</div>
+
+keep buttons, if pressed "show", show div 1, if pressed "hide", hide div 1
+<button (click)="showDiv1()">Show</button>
+<button (click)="hideDiv1()">Hide</button>
+
+also toggle button, if clicked color of division changes.
+
+=========================================================================================================================================================================
+
+services and Dependency Injection : to share data between components and to create a service to perform a specific task
+
+Service : it is used to store data or share logic between components instend of writing the same code in multiple components we can create a service and use it in multiple components
+
+
+========================================================= Ativity =========================================================================================================
+
+write 2 eg with services and learn more about services and dependency injection in angular

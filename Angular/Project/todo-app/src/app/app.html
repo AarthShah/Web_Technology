@@ -1,0 +1,8 @@
+<h1>Todo App 🚀</h1>
+
+<input type="text" [(ngModel)]="task" placeholder="Enter task">
+<button (click)="addTask()">Add</button>
+
+<ul>
+  <li *ngFor="let t of taskList"><input type="checkbox" [(ngModel)]="t.completed"> {{ t.text }} <button (click)="removeTask(taskList.indexOf(t))">Remove</button></li>
+</ul>
