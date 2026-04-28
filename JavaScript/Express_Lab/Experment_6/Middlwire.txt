@@ -1,0 +1,16 @@
+middlewares is the fuction 
+
+it can change data , check data , log info , Authenticate user , etc
+
+app. use((req,res,next)=>{
+    console.log("request received "+new Date());
+    next();
+})
+
+Activitys:
+ where do we use middlewares?
+ why do we use middlewares?
+ in company level where and why we use middlewares?
+
+next( ) it pass control to the next fuction in the stack without it the request will be left hanging 
+and the client will not receive a response

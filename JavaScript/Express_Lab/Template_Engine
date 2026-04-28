@@ -1,0 +1,25 @@
+Template Engine allows developer to create dynamic web pages using data from server
+insted of static HTML pages are created Dynamically
+eg of Template Engin
+EJS(Embbed JavaScript)
+PUG
+handlebars
+
+why do me need Template Engine
+dynamic Content
+code resuablity
+sepraete logic from HTML
+
+eg  with EJS
+
+install EJS : npm i ejs
+
+
+
+Activitys
+ EJS creatation
+
+ Adition Topics
+  static files
+  express router
+  complete Express apllication workflow

@@ -1,0 +1,12 @@
+from middle ware 
+ middle ware is a function during request b4 send the final response they have access through request , response , next
+ middle ware flow  
+
+Activity 
+ Why do we use middle ware 
+ types of Middle ware
+ what are benefits of middle ware 
+ where do we use middle ware 
+ 
+
+Adcance middle ware

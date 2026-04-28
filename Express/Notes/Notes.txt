@@ -1,0 +1,26 @@
+What is Express.??
+Why do we Need Express.??
+
+routing in Express.??
+routing refers to determinng  how an appliation responds to a client request to a secific Http request method (GET, POST, etc)
+and a specific URL path (endpoint).
+
+components of routing in Express.:
+1. url path
+2. http method
+3. handler function
+
+3 to 4 Methinds for routhing in Express.:
+1. app.get() - to handle GET requests
+2. app.post() - to handle POST requests
+3. app.put() - to handle PUT requests
+4. app.delete() - to handle DELETE requests
+
+Example of routing in Express.:
+```javascript
+    app.get('/Profile',(req,res)=>{
+    res.send('Thia is your profile')
+    })
+
+```
+     
